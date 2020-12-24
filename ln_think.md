@@ -1,0 +1,93 @@
+# 原理
+tldr ln  
+
+```bash
+#先来看一下tldr里面极短的命令解释，两个用法
+# ln file filehardlink
+# ln -s file filesymblink
+#最后说一下。好像我刚刚讲错了。带s选项的是软链接，
+#快捷方式偏软链接一些
+  Creates links to files and directories.
+
+  - Create a symbolic link to a file or directory:
+    ln -s path/to/file_or_directory path/to/symlink
+
+  - Create a hard link to a file:
+    ln path/to/file path/to/hardlink
+```
+
+# 实践
+
+```bash
+$ echo hello > a.txt#创建文件a.txt并写入hello
+$ ln a.txt a_hardlink #建立硬链接
+$ ln -s a.txt a_sym#建立软链接
+
+$ ll #查看目录下文件的链接关系 及大小
+$ cat a.txt 
+$ cat a_hardlink
+$ cat a_sym #查看三个文件。内容一致
+
+$ echo "aaaaaaaaaa">>a_hardlink #添加内容。添加到文件后面
+
+$ ll #查看目录下文件的链接关系 及大小 ，发现硬链接随之改变并与原文件等大，但软链接大小不变
+$ cat a.txt 
+$ cat a_hardlink
+$ cat a_sym #查看三个文件。内容一致
+
+
+```
+
+以上是ln的实践，其实-s的软链接创建的是一个目录导向文件，就有点类似windows的快捷方式 ，windows的快捷方式是.link的文件。打开这两个文件会发现其实。内容是目录导向，只是在系统中。用cat查看的时候能够默认导过去
+
+
+
+```bash
+# fdisk -l
+```
+
+![截屏2020-12-13 下午8.48.27](/Users/we/Library/Application Support/typora-user-images/截屏2020-12-13 下午8.48.27.png)
+
+解释一下：命令是硬盘管理，l选项是我一致认为是详情的意思，
+
+第一行 指明有一个硬盘 地址是 /dev/sda （~~linux默认的主地址，也就是系统盘地址，非系统盘是sdb，sdc这些~~）
+
+~~这一块就相当于一块实际的固态/机械硬盘。~~
+
+文件系统（~~比如fat32，ext4~~）针对的对象是分区（~~单词是p开头的来着~~）
+
+接下来几行是这块硬盘的一些属性
+
+一直到Device这里，这里描述的是这块硬盘有几个分区，里面都有啥
+
+如果这块有
+
+  - 分区1 sda1 大小是200m 
+
+  - 分区2 sda2 大小是200m 
+
+  - 分区3 sda3 大小是35G
+
+    （~~类型都是linux？，这个好像显示的不细致，我记得第一个分区类型是fat32，grub分区，第二块类型是ext4，boot分区，第三块类型是ext4，data分区~~)
+
+
+
+比如这里如果插一块8G的U盘
+
+![截屏2020-12-13 下午9.11.53](/Users/we/Documents/截屏2020-12-13 下午9.11.53.png)
+
+可以看到它没有分区。这是一块没有灵魂的的U盘
+
+```bash
+$ fdisk /dev/sdb #给磁盘分区
+$ mkfs.ext4 /dev/sdb1 #给磁盘的分区1格式化成你想要的格式，这里选ext4
+```
+
+![截屏2020-12-13 下午9.14.40](/Users/we/Documents/截屏2020-12-13 下午9.14.40.png)
+
+
+
+
+
+**附录：🤮，请注意，虚拟机里面对硬盘的支持不是很好,容易报错，这是我试了几次才想起来以前看到过这么一条提示，🤢恶心到我了，如果不格式化之前mount挂在是会报错的，但如果在虚拟机中格式化了挂载如果不成功（别怀疑，那不是你的问题，那是虚拟的问题）**
+
