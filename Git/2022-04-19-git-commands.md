@@ -1,4 +1,8 @@
 # Git Commands
+> [原文出处☚](https://github.com/suyar/git-commands)  
+> 只是为方便学习，不做其他用途。在此发布个人修改版本。
+
+---
 > ### 开始使用git  
 
 * 设置用户名  
@@ -104,4 +108,7 @@ _注：一路回车，在用户主目录里找到.ssh目录，里面有id_rsa和
 
 `git config core.gitproxy=socks5://127.0.0.1:1080` _设置socket5代理_  
 `git config core.filemode false` _忽略文件权限差异_  
+
+---
+**转载请注明出处**  
 
