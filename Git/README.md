@@ -1,8 +1,5 @@
-# Git
-> git 
----
-# Git Commands
-
+# Git 
+>Git Commands
 ---
 > ### 开始使用git  
 
