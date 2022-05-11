@@ -26,6 +26,12 @@ _注：如果add后又修改了文件，还要再add一次之后再commit_
 * 查看历史命令  
 `git reflog`
 
+> ### 常用代码
+`git format-patche [commit]` _把某一次提交打包出来_
+`git am *.patch` _打入patch_
+
+`git diff [old commit] [new commit] >c.diff` _两次提交的diff_
+`git apply c.diff` _打包_
 > ### 版本控制  
 
 * 版本回退  
