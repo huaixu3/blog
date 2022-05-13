@@ -8,4 +8,9 @@ setfacl --restore=permis.facl #从permis.facl文件恢复文件中记录的权�
 ```
 `netstat -tunlp |grep [port] _`查看对应端口占用情况_
 `netstat -anp |grep [port] _`查看对应端口占用情况_
+`mysqldump -u root -p --databases dbname1 dbname2 > dumpmysql.sql ` _备份多个数据库_
+`mysql -u username -P  dbname < dumpmysql.sql` _恢复单个数据库_
+`mysqldump -u root -p --all-databases > all.sql` _备份全部数据库_
+`mysql -u root -p < all.sql ` _恢复全部数据库_
+
 
