@@ -67,6 +67,13 @@ showmount 命令选项：（显示关于nfs服务器挂载信息）
 | a      | all         | 显示客户主机名和挂载目录 |
 | d      | directories | 仅显示被用户挂载的目录   |
 
+## 开机自动挂载
+```bash
+在/etc/fstab中添加
+192.168.59.129:/share      /share      nfs  defaults  0  0
+
+```
+
 ## 简要原理
 
 nfs端口：2049  
