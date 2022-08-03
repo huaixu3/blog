@@ -15,6 +15,7 @@
         * [LAMP 环境和phpmyadmin](Linux/LAMP/2021-04-11-LAMP_phpmyadmin.md)
 
     * [commands](Linux/linux-commands.md)
+    * [tinc搭建一个内网](Linux/2022-08-03-tinc.md)
     * [我和manjaro](Linux/2020-09-13-I_and_manjaro.md)
     * [对虚拟机的思考](Linux/2021-04-24-virtual.md)
     * [树莓派4B-配置和注意事项](Linux/2021-07-02-raspberry.md)
