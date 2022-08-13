@@ -10,14 +10,14 @@
 > NFS(Network File System)网络文件系统  
 > RPC（Remote Procedure Call)远程程序调用
 ```bash
-#配置文件
-/etc/exports
-/path (rw,no_root_squash,no_all_squash,sync)
-#服务端安装nfs和rpc```
+#服务端安装nfs和rpc
 yum install nfs-utils rpcbind -y 
-#修改配置文件/etc/exports
+
+#配置文件/etc/exports
+/path (rw,no_root_squash,no_all_squash,sync)
+#eg:修改配置文件/etc/exports
 /root/nfs 192.168.1(rw,no_root_squash,sync) #指定ip
-/mnt/nfs *(rw,all_squash,anonuid=1000,anongid=1000,sync)
+/mnt/nfs *(rw,all_squash,anonuid=1000,anongid=1000,sync)#所有人都可以连，无权限
 #重新载入挂载点
 exportfs -r
 #启动nfs服务和设置开机自启动
@@ -32,8 +32,15 @@ systemctl disable firewalld.service
 yum install nfs-utils rpcbind -y
 #挂载远端
 mount -t nfs [ip]:/root/nfs /root/nfs
-```
 
+# 查看远端nfs的暴露情况
+showmount -e [ip]
+
+# 开机自动挂载
+在/etc/fstab中添加
+192.168.59.129:/share      /share      nfs  defaults  0  0
+
+```
 
 ## 管理命令选项
 权限属性：
@@ -54,7 +61,7 @@ exportfs 命令选项：
 
 | option | function | remark        |
 |--------|----------|---------------|
-| a      | all      | 一般和r/u连用 | `
+| a      | all      | 一般和r/u连用 | 
 | r      | 重新导入 |               |
 | u      | 取消导入 |               |
 | v      | version  | 版本信息      |
@@ -67,12 +74,6 @@ showmount 命令选项：（显示关于nfs服务器挂载信息）
 | a      | all         | 显示客户主机名和挂载目录 |
 | d      | directories | 仅显示被用户挂载的目录   |
 
-## 开机自动挂载
-```bash
-在/etc/fstab中添加
-192.168.59.129:/share      /share      nfs  defaults  0  0
-
-```
 
 ## 简要原理
 
