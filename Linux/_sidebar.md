@@ -6,6 +6,7 @@
         * [ln链接](Linux/command/2021-04-20-ln_think.md)
         * [linux用户机制及管理](Linux/command/2021-06-14-linux_user_manager.md)
     * 与服务相关
+        * [端口转发rinetd](Linux/server/rinetd.md)
         * [定时任务crond](Linux/server/crond.md)
         * [NFS安装和使用](Linux/server/NFS-安装和使用.md)
         * [hello-ldap](Linux/server/hello-ldap.md)
