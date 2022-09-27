@@ -11,8 +11,8 @@ git stash
 git pull origin master
 ```
 ## 每天中午/下班自动保存并push
-`*/30 * * * * /path/push.sh`
-`ssh://git@xxxx.com:222/username/repo.git` _如果默认端口不是22，则需要改变书写格式_
+`0 12,18 * * * /path/push.sh`
+`ssh://git@xxxx.com:222/username/repo.git` _如果默认端口不是22，则需要改变书写格式_ 
 `git@xxx.com/username/repo.git` _如果是22端口的情况_ 
 
 ```bash
