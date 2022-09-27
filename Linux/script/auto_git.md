@@ -22,6 +22,7 @@ dd=`date +%Y%m%d-%H:%M`
 export LANG=zh_CN.UTF-8
 unset GIT_DIR
 cd /path/repo
+git pull origin master
 git add *
 git commit -m "$dd backup"
 git push origin master
