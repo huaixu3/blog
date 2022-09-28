@@ -14,6 +14,8 @@
         * [在阿里云服务器中搭建ftp服务](Linux/server/2021-6-13-server_ftp.md)
     * 一些脚本
         * [mysql定时备份](Linux/script/mysql_dump.md)
+        * [git自动提交与拉取](Linux/script/auto_git.md)
+        * [自动填写tinc配置信息](Linux/script/auto_tinc.md)
     * LAMP架构
         * [安装mysql在manjaro中](Linux/LAMP/2021-04-10-intall_mysql_in_manjaro.md)
         * [LAMP 环境和phpmyadmin](Linux/LAMP/2021-04-11-LAMP_phpmyadmin.md)
