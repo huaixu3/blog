@@ -16,6 +16,8 @@
         * [mysql定时备份](Linux/script/mysql_dump.md)
         * [git自动提交与拉取](Linux/script/auto_git.md)
         * [自动填写tinc配置信息](Linux/script/auto_tinc.md)
+        * [检查磁盘使用情况并报警](Linux/script/checkDisk.md)
+        * [删除指定文件](Linux/script/rmSomeFile.md)
     * LAMP架构
         * [安装mysql在manjaro中](Linux/LAMP/2021-04-10-intall_mysql_in_manjaro.md)
         * [LAMP 环境和phpmyadmin](Linux/LAMP/2021-04-11-LAMP_phpmyadmin.md)
