@@ -4,5 +4,9 @@
     * [Mac](mac/)
     * [docker](docker/)
     * [git ](Git/)
-    * [cpp ](cpp/)
+    * language
+        * [cpp ](language/cpp/)
+        * [javaScript ](language/js/)
+        * [java ](language/java/)
+    * [知识点 ](points/)
     * [Life](think_life/)
