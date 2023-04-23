@@ -1,6 +1,6 @@
 <!-- docs/_sidebar.md-->
-* [Linux](Linux/)
 * [↫](../)
+* [Linux](Linux/)
     * 命令思考
         * [dd和cp在硬盘上的区别](Linux/command/2020-09-06-cp_and_dd.md)
         * [ln链接](Linux/command/2021-04-20-ln_think.md)
