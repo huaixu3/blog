@@ -9,4 +9,7 @@
     z00repo
         tmp
 
-
+blog 
+    learn
+    life(two principle)
+    invest(principle)
