@@ -41,18 +41,19 @@
     - [git 本地同步至github(ssh)](Learn/Git/2020-09-23-git_sync.md)
     - [git 合作仓库](Learn/Git/2021-05-16-git_cooperation.md)
 - language
+    - JavaScript
+        - [js语法（ECMAScript）](Learn/language/js/javascript_base_0.md)
+        - [jsDom对象](Learn/language/js/javascript_dom_1.md)
+        - [nodejs内置模块](Learn/language/js/nodejs_built-in-modules.md)
+   - Java
+        - [Java ](Learn/language/java/java-web.md)
    - C++
         - [代码格式化](Learn/language/cpp/2021-08-29-clang-format.md)
         - [C/C++中的随机数](Learn/language/cpp/2020-12-10-rand_and_generator.md)
         - [C/C++学习-模块编程STL](Learn/language/cpp/2020-09-13-cpp2_stl.md)
         - [C/C++学习-对象](Learn/language/cpp/2020-08-10-cpp1_object.md)
         - [C/C++学习-基础语法](Learn/language/cpp/2020-06-15-cpp0_base.md)
-   - JavaScript
-        - [js语法（ECMAScript）](Learn/language/js/javascript_base_0.md)
-        - [jsDom对象](Learn/language/js/javascript_dom_1.md)
-        - [nodejs内置模块](Learn/language/js/nodejs_built-in-modules.md)
-   - Java
-   - [Java ](Learn/language/java/)
+
 - 知识点
     - [base64和utf-8](Learn/points/base64-and-utf-8.md)
     - [jwt](Learn/points/jwt.md)
