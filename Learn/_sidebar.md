@@ -4,6 +4,7 @@
        - [ln链接](Learn/Linux/command/2021-04-20-ln_think.md)
        - [linux用户机制及管理](Learn/Linux/command/2021-06-14-linux_user_manager.md)
    - 与服务相关
+       - [简易systemd服务控制](Learn/Linux/server/linux-systemd-server.md)
        - [端口转发rinetd](Learn/Linux/server/rinetd.md)
        - [定时任务crond](Learn/Linux/server/crond.md)
        - [NFS安装和使用](Learn/Linux/server/NFS-安装和使用.md)
