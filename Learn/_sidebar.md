@@ -1,5 +1,5 @@
 - Linux
-   - 命令思考
+   - shellCommandThink
        - [dd和cp在硬盘上的区别](Learn/Linux/command/2020-09-06-cp_and_dd.md)
        - [ln链接](Learn/Linux/command/2021-04-20-ln_think.md)
        - [linux用户机制及管理](Learn/Linux/command/2021-06-14-linux_user_manager.md)
@@ -14,20 +14,20 @@
 - Mac
     - [mac automount 自动挂载](Learn/mac/automount.md)
 - service
-       - [数据库运维-线程操作及数据库锁](Learn/service/mysql-process.md)
-       - [简易systemd服务控制](Learn/service/linux-systemd-server.md)
-       - [端口转发rinetd](Learn/service/rinetd.md)
-       - [定时任务crond](Learn/service/crond.md)
-       - [NFS安装和使用](Learn/service/NFS-安装和使用.md)
-       - [hello-ldap](Learn/service/hello-ldap.md)
-       - [在阿里云服务器搭建jupyter notebook](Learn/service/2021-06-12-server-jupyter_notebook.md)
-       - [在阿里云服务器中搭建ftp服务](Learn/service/2021-6-13-server_ftp.md)
+    - [数据库运维-线程操作及数据库锁](Learn/service/mysql-process.md)
+    - [简易systemd服务控制](Learn/service/linux-systemd-server.md)
+    - [端口转发rinetd](Learn/service/rinetd.md)
+    - [定时任务crond](Learn/service/crond.md)
+    - [NFS安装和使用](Learn/service/NFS-安装和使用.md)
+    - [hello-ldap](Learn/service/hello-ldap.md)
+    - [在阿里云服务器搭建jupyter notebook](Learn/service/2021-06-12-server-jupyter_notebook.md)
+    - [在阿里云服务器中搭建ftp服务](Learn/service/2021-6-13-server_ftp.md)
 - script
-       - [mysql定时备份](Learn/script/mysql_dump.md)
-       - [git自动提交与拉取](Learn/script/auto_git.md)
-       - [自动填写tinc配置信息](Learn/script/auto_tinc.md)
-       - [检查磁盘使用情况并报警](Learn/script/checkDisk.md)
-       - [删除指定文件](Learn/script/rmSomeFile.md)
+    - [mysql定时备份](Learn/script/mysql_dump.md)
+    - [git自动提交与拉取](Learn/script/auto_git.md)
+    - [自动填写tinc配置信息](Learn/script/auto_tinc.md)
+    - [检查磁盘使用情况并报警](Learn/script/checkDisk.md)
+    - [删除指定文件](Learn/script/rmSomeFile.md)
 - docker
     - [docker-commands](Learn/docker/docker-command.md)
     - [docker01容器生态系统](Learn/docker/2019-12-21-docker1.md)
@@ -41,7 +41,7 @@
     - [git 基础操作](Learn/Git/2021-04-25-git_base.md)
     - [git 本地同步至github(ssh)](Learn/Git/2020-09-23-git_sync.md)
     - [git 合作仓库](Learn/Git/2021-05-16-git_cooperation.md)
-- language
+- devLanguage
    - C++
         - [代码格式化](Learn/language/cpp/2021-08-29-clang-format.md)
         - [C/C++中的随机数](Learn/language/cpp/2020-12-10-rand_and_generator.md)
@@ -53,8 +53,8 @@
         - [jsDom对象](Learn/language/js/javascript_dom_1.md)
         - [nodejs内置模块](Learn/language/js/nodejs_built-in-modules.md)
    - Java
-   - [Java ](Learn/language/java/)
-- 知识点
+   	- [Java ](Learn/language/java/)
+- knowledgePoints
     - [base64和utf-8](Learn/points/base64-and-utf-8.md)
     - [jwt](Learn/points/jwt.md)
     - [websocket协议](Learn/points/websocket.md)
