@@ -3,24 +3,9 @@
        - [dd和cp在硬盘上的区别](Learn/Linux/command/2020-09-06-cp_and_dd.md)
        - [ln链接](Learn/Linux/command/2021-04-20-ln_think.md)
        - [linux用户机制及管理](Learn/Linux/command/2021-06-14-linux_user_manager.md)
-   - 与服务相关
-       - [简易systemd服务控制](Learn/Linux/server/linux-systemd-server.md)
-       - [端口转发rinetd](Learn/Linux/server/rinetd.md)
-       - [定时任务crond](Learn/Linux/server/crond.md)
-       - [NFS安装和使用](Learn/Linux/server/NFS-安装和使用.md)
-       - [hello-ldap](Learn/Linux/server/hello-ldap.md)
-       - [在阿里云服务器搭建jupyter notebook](Learn/Linux/server/2021-06-12-server-jupyter_notebook.md)
-       - [在阿里云服务器中搭建ftp服务](Learn/Linux/server/2021-6-13-server_ftp.md)
-   - 一些脚本
-       - [mysql定时备份](Learn/Linux/script/mysql_dump.md)
-       - [git自动提交与拉取](Learn/Linux/script/auto_git.md)
-       - [自动填写tinc配置信息](Learn/Linux/script/auto_tinc.md)
-       - [检查磁盘使用情况并报警](Learn/Linux/script/checkDisk.md)
-       - [删除指定文件](Learn/Linux/script/rmSomeFile.md)
-   - LAMP架构
+   - LAMP
        - [安装mysql在manjaro中](Learn/Linux/LAMP/2021-04-10-intall_mysql_in_manjaro.md)
        - [LAMP 环境和phpmyadmin](Learn/Linux/LAMP/2021-04-11-LAMP_phpmyadmin.md)
-
    - [commands](Learn/Linux/linux-commands.md)
    - [tinc搭建一个内网](Learn/Linux/2022-08-03-tinc.md)
    - [我和manjaro](Learn/Linux/2020-09-13-I_and_manjaro.md)
@@ -28,6 +13,21 @@
    - [树莓派4B-配置和注意事项](Learn/Linux/2021-07-02-raspberry.md)
 - Mac
     - [mac automount 自动挂载](Learn/mac/automount.md)
+- service
+       - [数据库运维-线程操作及数据库锁](Learn/service/mysql-process.md)
+       - [简易systemd服务控制](Learn/service/linux-systemd-server.md)
+       - [端口转发rinetd](Learn/service/rinetd.md)
+       - [定时任务crond](Learn/service/crond.md)
+       - [NFS安装和使用](Learn/service/NFS-安装和使用.md)
+       - [hello-ldap](Learn/service/hello-ldap.md)
+       - [在阿里云服务器搭建jupyter notebook](Learn/service/2021-06-12-server-jupyter_notebook.md)
+       - [在阿里云服务器中搭建ftp服务](Learn/service/2021-6-13-server_ftp.md)
+- script
+       - [mysql定时备份](Learn/script/mysql_dump.md)
+       - [git自动提交与拉取](Learn/script/auto_git.md)
+       - [自动填写tinc配置信息](Learn/script/auto_tinc.md)
+       - [检查磁盘使用情况并报警](Learn/script/checkDisk.md)
+       - [删除指定文件](Learn/script/rmSomeFile.md)
 - docker
     - [docker-commands](Learn/docker/docker-command.md)
     - [docker01容器生态系统](Learn/docker/2019-12-21-docker1.md)
