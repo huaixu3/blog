@@ -3,6 +3,13 @@
 # 文件权限备份与恢复
 getfacl -R /directoryOrFile > permis.facl #备份目录或文件的权限到permis.facl
 setfacl --restore=permis.facl #从permis.facl文件恢复文件中记录的权限信息
+# 默认文件权限变更 
+# 方法1
+find -type d|xargs chmod 755 
+find -type f|xargs chmod 644
+# 方法2 
+chmod 644 -R ./ 
+find ./ -type d -print|xargs chmod 755;
 
 ```
 `grep -r [PATTERN] ./* ` _查找当前文件夹下文件内字符_  
