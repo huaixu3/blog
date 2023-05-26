@@ -43,6 +43,7 @@
     - [git 基础操作](Learn/Git/2021-04-25-git_base.md)
     - [git 本地同步至github(ssh)](Learn/Git/2020-09-23-git_sync.md)
     - [git 合作仓库](Learn/Git/2021-05-16-git_cooperation.md)
+    - [git-subtree](Learn/Git/git-subtree.md)
 - devLanguage
    - C++
         - [代码格式化](Learn/language/cpp/2021-08-29-clang-format.md)
