@@ -7,6 +7,7 @@
        - [安装mysql在manjaro中](Learn/Linux/LAMP/2021-04-10-intall_mysql_in_manjaro.md)
        - [LAMP 环境和phpmyadmin](Learn/Linux/LAMP/2021-04-11-LAMP_phpmyadmin.md)
    - [commands](Learn/Linux/linux-commands.md)
+   - [redis及其命令](Learn/Linux/redis-commands.md)
    - [xcat及其命令](Learn/Linux/xcat-commands.md)
    - [pcs及其命令](Learn/Linux/pcs-commands.md)
    - [tinc搭建一个内网](Learn/Linux/2022-08-03-tinc.md)

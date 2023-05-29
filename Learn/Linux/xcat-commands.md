@@ -32,4 +32,7 @@ tabdump networks
 tabdump postscripts
 tabedit postscripts -w "node=xcatdefaults"  # 删除掉不想要的部分 node后面更列表名
 
+# 单个节点更新单个脚本  
+updatenode node01 -P script1
+
 ```
