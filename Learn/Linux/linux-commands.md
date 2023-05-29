@@ -20,5 +20,5 @@ find ./ -type d -print|xargs chmod 755;
 `mysql -u username -P  dbname < dumpmysql.sql` _恢复单个数据库_  
 `mysqldump -u root -p --all-databases > all.sql` _备份全部数据库_  
 `mysql -u root -p < all.sql ` _恢复全部数据库_  
-
+`nohup sh my.sh >my.log 2>&1 &` _后台执行某脚本，终端不连接之后依旧执行_  
 
