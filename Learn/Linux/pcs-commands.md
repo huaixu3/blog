@@ -44,6 +44,8 @@ pcs constraint location remove location-mhyt_studio_group-clone-mgt01--INFINITY
 ```
 ## 机器的维护和服务
 ```sh
+# 资源服务查看
+pcs config
 # 机器维护 
 pcs node standby mgt03
 pcs node unstandby mgt03
