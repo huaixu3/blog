@@ -14,4 +14,7 @@ mysql -u [user] -p[password]   -h [ip/hostname] [database]
  where table_schema='test'
  order by data_length desc, index_length desc;
  # 其中table_schema 为查看的数据库名
+
+ # 备份指定表
+ mysqldump -u username -pPassword -h 127.0.0.1 --opt databaseName tableName > ./tableName.sql
  ```
