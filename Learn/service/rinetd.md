@@ -1,9 +1,9 @@
 # rinetd端口转发
 
 ## 下载安装
-`yum -y install gcc gcc-c++ make` _安装依赖_
-`wget https://github.com/samhocevar/rinetd/releases/download/v0.70/rinetd-0.70.tar.gz` _下载rinetd_
-`tar xf rinetd-0.70.tar.gz` _解压_
+`yum -y install gcc gcc-c++ make` _安装依赖_  
+`wget https://github.com/samhocevar/rinetd/releases/download/v0.70/rinetd-0.70.tar.gz` _下载rinetd_  
+`tar xf rinetd-0.70.tar.gz` _解压_  
 ```bash
 cd rinetd-0.79
 ./bootstrap
@@ -27,7 +27,35 @@ vi /etc/rinetd.conf
 127.0.0.1 8000/udp 192.168.1.2 8000/udp
 
 ```
-`pkill rinetd`  _关闭进程_
-`rinetd -c /etc/rinetd.conf`  _启动转发_
-`echo "rinetd -c /etc/rinetd.conf ">>/etc/rc.local` _开机自动运行_
-`netstat -antup` _查看是否运行正常_
+`pkill rinetd`  _关闭进程_  
+`rinetd -c /etc/rinetd.conf`  _启动转发_  
+`echo "rinetd -c /etc/rinetd.conf ">>/etc/rc.local` _开机自动运行_  
+`netstat -antup` _查看是否运行正常_  
+`sudo netstat -tlnp | grep rinetd` _查看rinetd占用的端口情况_  
+
+## 服务文件
+```bash
+vim /etc/systemd/system/rinetd.service
+[Unit]
+Description=Rinetd Daemon
+
+[Service]
+Type=simple
+ExecStart=rinetd -f -c /etc/rinetd.conf
+PIDFile=/run/rinetd.pid
+Restart=always
+RestartSec=5s
+
+# reload action
+ExecReload=/bin/kill -HUP $MAINPID
+KillMode=process
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
+
+systemctl daemon-reload # 重新加载，以发现rinetd服务
+systemctl start rinetd
+systemctl enable rinetd
+systemctl reload rinetd # 重新加载配置
+```

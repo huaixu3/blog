@@ -20,8 +20,8 @@
     - [mac automount 自动挂载](Learn/mac/automount.md)
 - service
     - [数据库运维-线程操作及数据库锁](Learn/service/mysql-process.md)
-    - [简易systemd服务控制](Learn/service/linux-systemd-server.md)
-    - [端口转发rinetd](Learn/service/rinetd.md)
+    - [systemd服务文件](Learn/service/linux-systemd-server.md)
+    - [rinetd-端口转发](Learn/service/rinetd.md)
     - [定时任务crond](Learn/service/crond.md)
     - [NFS安装和使用](Learn/service/NFS-安装和使用.md)
     - [hello-ldap](Learn/service/hello-ldap.md)
