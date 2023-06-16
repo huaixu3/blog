@@ -13,9 +13,11 @@ find ./ -type d -print|xargs chmod 755;
 
 ```
 `grep -r [PATTERN] ./* ` _查找当前文件夹下文件内字符_  
-`find ./ -type f -name "*.txt"` _查找当前目录下文件类型为txt的文件_
-`kill -9 PID` _强制杀死kill杀不死的进程_
+`find ./ -type f -name "*.txt"` _查找当前目录下文件类型为txt的文件_  
+`kill -9 PID` _强制杀死kill杀不死的进程_  
+`less -r ./man.1` _查看man文件_  
 `netstat -tunlp |grep [port] ` _查看对应端口占用情况_  
+`netstat -tlnp | grep [app] ` _查看对应应用占用情况_  
 `netstat -anp |grep [port] ` _查看对应端口占用情况_  
 `mysqldump -u root -p --databases dbname1 dbname2 > dumpmysql.sql ` _备份多个数据库_  
 `mysql -u username -P  dbname < dumpmysql.sql` _恢复单个数据库_  
