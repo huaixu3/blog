@@ -22,11 +22,12 @@
 ## server public
 > 10.0.0.200-
 
-| ip         | name           | remark                 |
-|------------|----------------|------------------------|
-| 10.0.0.200 | tinc_ali       | centos8-ali-remote     |
-| 10.0.0.202 | babu_server02  | centos8-ucloud-remote  |
-| 10.0.0.210 | babu_server210 | centos8-tencent-remote |
+| ip         | name           | remark                  |
+|------------|----------------|-------------------------|
+| 10.0.0.200 | tinc_ali       | centos8-ali-remote      |
+| 10.0.0.202 | babu_server02  | centos8-ucloud-remote   |
+| 10.0.0.203 | racknerd       | centos8-racknerd-remote |
+| 10.0.0.210 | babu_server210 | centos8-tencent-remote  |
 
 ## other
 | ip         | name          | remark             |
