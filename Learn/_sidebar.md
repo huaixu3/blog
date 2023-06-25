@@ -33,6 +33,7 @@
     - [自动填写tinc配置信息](Learn/script/auto_tinc.md)
     - [检查磁盘使用情况并报警](Learn/script/checkDisk.md)
     - [删除指定文件](Learn/script/rmSomeFile.md)
+    - [杀死多余子进程及其衍生进程](Learn/script/killSubprocess.md)
 - docker
     - [docker-commands](Learn/docker/docker-command.md)
     - [docker01容器生态系统](Learn/docker/2019-12-21-docker1.md)
