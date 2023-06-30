@@ -6,7 +6,7 @@
    - LAMP
        - [安装mysql在manjaro中](Learn/Linux/LAMP/2021-04-10-intall_mysql_in_manjaro.md)
        - [LAMP 环境和phpmyadmin](Learn/Linux/LAMP/2021-04-11-LAMP_phpmyadmin.md)
-   - [通用常用命令](Learn/Linux/linux-commands.md)
+   - [linux常用命令](Learn/Linux/linux-commands.md)
    - [gbfs及其命令](Learn/Linux/gbfs-commands.md)
    - [mysql及其命令](Learn/Linux/mysql-commands.md)
    - [redis及其命令](Learn/Linux/redis-commands.md)
